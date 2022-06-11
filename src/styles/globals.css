@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-create {
+  @apply 
+    flex 
+    ml-auto items-center 
+    p-2
+    bg-gradient-to-r from-pink-600 via-pink-700 to-pink-800 
+    rounded-md 
+  text-white 
+    transition 
+    hover:shadow-lg hover:-translate-y-0.5 hover:scale-105;
+}
