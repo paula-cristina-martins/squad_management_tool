@@ -7,32 +7,31 @@ import Tooltip from '../../../components/Tooltip';
 
 export default function UpdateTeams() {
   const { query } = useRouter();
-  console.log(query);
 
   const [name, setName] = useState(query.name);
   const [webSite, setWebSite] = useState(query.webSite);
   const [description, setDescription] = useState(query.description);
   const [teamType, setTeamType] = useState(query.typeTeam);
   const [tags, setTags] = useState(query.tags);
-
   const [tagTeam, setTagTeam] = useState([{ description: tags }]);
 
-  const handleInputTagTeam = (e: ChangeEvent<HTMLInputElement>, position: number) => {
+  function handleInputTagTeam(e: ChangeEvent<HTMLInputElement>, position: number) {
     const { name, value } = e.target;
     const list: any = [...tagTeam];
     list[position][name] = value;
     setTagTeam(list);
   };
 
-  const handleRemoveTagTeam = (position: number) => {
+  function handleRemoveTagTeam(position: number) {
     const list = [...tagTeam];
     list.splice(position, 1);
     setTagTeam(list);
   };
 
-  const handleAddTagTeam = () => {
+  function handleAddTagTeam() {
     setTagTeam([...tagTeam, { description: '' }]);
   };
+
   return (
     <div className="container w-full p-4 my-5 mx-24 rounded-lg shadow-lg bg-white">
       <hr className="my-5" />

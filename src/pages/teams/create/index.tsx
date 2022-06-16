@@ -7,20 +7,20 @@ import Tooltip from "../../../components/Tooltip";
 export default function CreateTeams() {
   const [tagTeam, setTagTeam] = useState([{ description: '' }]);
 
-  const handleInputTagTeam = (e: ChangeEvent<HTMLInputElement>, position: number) => {
+  function handleInputTagTeam(e: ChangeEvent<HTMLInputElement>, position: number) {
     const { name, value } = e.target;
     const list: any = [...tagTeam];
     list[position][name] = value;
     setTagTeam(list);
   };
 
-  const handleRemoveTagTeam = (position: number) => {
+  function handleRemoveTagTeam(position: number) {
     const list = [...tagTeam];
     list.splice(position, 1);
     setTagTeam(list);
   };
 
-  const handleAddTagTeam = () => {
+  function handleAddTagTeam() {
     setTagTeam([...tagTeam, { description: '' }]);
   };
   return (

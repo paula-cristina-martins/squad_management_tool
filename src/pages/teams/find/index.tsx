@@ -18,31 +18,31 @@ export default function FindTeams() {
   const [lessPickedPlayer, setLessPickedPlayer] = useState<any>();
   const [showPlayers, setShowPlayers] = useState(false);
 
-  const handleNameSort = () => {
+  function handleNameSort() {
     setNameSort(!nameSort);
     handleNameOrderClick(nameSort);
   };
 
-  const handleDescriptionSort = () => {
+  function handleDescriptionSort() {
     setDescriptionSort(!descriptionSort);
     handleDescriptionOrderClick(descriptionSort);
   };
 
-  const handleNameOrderClick = (sort: boolean) => {
+  function handleNameOrderClick(sort: boolean) {
     let newListTeam = [...teamList];
     if (sort) newListTeam.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
     else newListTeam.sort((a, b) => (a.name < b.name ? 1 : b.name < a.name ? -1 : 0));
     setTeamList(newListTeam);
   };
 
-  const handleDescriptionOrderClick = (sort: boolean) => {
+  function handleDescriptionOrderClick(sort: boolean) {
     let newListTeam = [...teamList];
     if (sort) newListTeam.sort((a, b) => (a.description > b.description ? 1 : b.description > a.description ? -1 : 0));
     else newListTeam.sort((a, b) => (a.description < b.description ? 1 : b.description < a.description ? -1 : 0));
     setTeamList(newListTeam);
   };
 
-  const handleDeleteRegister = (position: number) => {
+  function handleDeleteRegister(position: number) {
     const team = [...teamList];
     team.splice(position, 1);
     setTeamList(team);
