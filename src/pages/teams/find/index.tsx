@@ -177,6 +177,7 @@ export default function FindTeams() {
                                 description: data.description,
                                 webSite: data.webSite,
                                 typeTeam: data.typeTeam,
+                                tags: data.tags
                               },
                             }}
                             as={"/teams/update/" + data.id}
