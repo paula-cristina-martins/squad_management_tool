@@ -4,14 +4,9 @@ export default [
     name: 'Barcelona', 
     description: '1-Barcelona Squad', 
     webSite: 'http://www.barcelona.com',
-    typeTeam: true,
+    typeTeam: 'real',
     totalGames: 25,
-    tags: [
-      { id: 1, description: 'BR' },
-      { id: 2, description: 'PTW' },
-      { id: 3, description: 'ATTACK' },
-      { id: 4, description: 'DEF' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [
       { 
         id: 1, 
@@ -104,12 +99,9 @@ export default [
     name: 'Real Madrid', 
     description: '2-Real Madrid Squad', 
     webSite: 'http://www.realMadrid.com',
-    typeTeam: true,
+    typeTeam: 'real',
     totalGames: 30,
-    tags: [
-      { id: 1, description: 'BR' },
-      { id: 4, description: 'DEF' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [
       { 
         id: 1, 
@@ -202,11 +194,9 @@ export default [
     name: 'Milan', 
     description: '3-Milan Squad', 
     webSite: 'http://www.milan.com',
-    typeTeam: true,
+    typeTeam: 'real',
     totalGames: 30,
-    tags: [
-      { id: 4, description: 'DEF' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [],
   },
   { 
@@ -214,14 +204,9 @@ export default [
     name: 'Liverpool', 
     description: '4-Liverpool Squad', 
     webSite: 'http://www.liverpool.com',
-    typeTeam: true,
+    typeTeam: 'real',
     totalGames: 40,
-    tags: [
-      { id: 1, description: 'BR' },
-      { id: 2, description: 'PTW' },
-      { id: 3, description: 'ATTACK' },
-      { id: 4, description: 'DEF' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [
       { 
         id: 1, 
@@ -314,14 +299,9 @@ export default [
     name: 'Bayern Munich', 
     description: '5-Bayern Munich Squad',
     webSite: 'http://www.bayerMunich.com',
-    typeTeam: false,
+    typeTeam: 'fantasy',
     totalGames: 30,
-    tags: [
-      { id: 1, description: 'BR' },
-      { id: 2, description: 'PTW' },
-      { id: 3, description: 'ATTACK' },
-      { id: 4, description: 'DEF' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [],
   },
   { 
@@ -329,11 +309,9 @@ export default [
     name: 'Lazio', 
     description: '6-Lazio Squad', 
     webSite: 'http://www.lazio.com', 
-    typeTeam: false,
+    typeTeam: 'fantasy',
     totalGames: 30,
-    tags: [
-      { id: 1, description: 'BR' },
-    ], 
+    tags: ['BR', 'PTW', 'ATTACK', 'DEF'],
     players: [],
   },
 ];
